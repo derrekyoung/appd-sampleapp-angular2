@@ -1,6 +1,14 @@
 {
   "name": "appd-sampleapp-angular2",
-  "version": "0.0.0",
+  "description": "Sample Angular 2 app for adding AppDynamics Browser RUM",
+  "author": "Derrek Young",
+  "version": "0.1.0",
+  "homepage": "https://github.com/derrekyoung/appd-sampleapp-angular2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/derrekyoung/appd-sampleapp-angular2.git"
+  },
+  "bugs": "https://github.com/derrekyoung/appd-sampleapp-angular2/issues",
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
