@@ -6,6 +6,7 @@
 1. Download or clone this project repository.
 1. Install [NPM, Node](https://nodejs.org/en/download/), and [angular-cli](https://github.com/angular/angular-cli#installation)
 1. Go into the project directory and run `npm install && ng serve`
+1. The app is now available at [http://localhost:4200/](http://localhost:4200/)
 
 # Configure for AppDynamics
 
