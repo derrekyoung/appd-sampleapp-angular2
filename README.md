@@ -39,7 +39,7 @@ declare var ADRUM : any;
 export class AppRoutingModule {
   vpView: any;
 
-  // APPD: Subscribe to the Router URL changes.
+  // Subscribe to the Router URL changes.
   constructor(public router:Router) {
       this.router.events.subscribe((event:Event) => {
               if (event instanceof NavigationEnd) {

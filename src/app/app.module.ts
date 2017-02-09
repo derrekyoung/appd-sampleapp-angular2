@@ -1,23 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpModule, JsonpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { Page1Component } from './page1/page1.component';
-import { Page2Component } from './page2/page2.component';
+import { NamesComponent } from './names/names.component';
+import { PostsComponent } from './posts/posts.component';
+import { PhotosComponent } from './photos/photos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Page1Component,
-    Page2Component
+    NamesComponent,
+    PostsComponent,
+    PhotosComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    JsonpModule,
     AppRoutingModule
   ],
   providers: [],

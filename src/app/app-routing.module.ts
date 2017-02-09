@@ -4,6 +4,9 @@ import { Routes, RouterModule, Router, Event, NavigationStart, NavigationEnd } f
 import { AppComponent } from './app.component';
 import { Page1Component } from './page1/page1.component';
 import { Page2Component } from './page2/page2.component';
+import { NamesComponent } from './names/names.component';
+import { PostsComponent } from './posts/posts.component';
+import { PhotosComponent } from './photos/photos.component';
 
 // Paste in this variable. This will throw an error if you haven't added the adrum.js to index.html.
 declare var ADRUM : any;
@@ -14,12 +17,16 @@ const routes: Routes = [
     children: []
   },
   {
-    path: 'page1',
-    component: Page1Component
+    path: 'names',
+    component: NamesComponent
   },
   {
-    path: 'page2',
-    component: Page2Component
+    path: 'posts',
+    component: PostsComponent
+  },
+  {
+    path: 'photos',
+    component: PhotosComponent
   }
 ];
 
@@ -31,7 +38,7 @@ const routes: Routes = [
 export class AppRoutingModule {
   vpView: any;
 
-  // APPD: Subscribe to the Router URL changes.
+  // Subscribe to the Router URL changes and report the metrics to AppDynamics.
   constructor(public router:Router) {
       this.router.events.subscribe((event:Event) => {
               if (event instanceof NavigationEnd) {
