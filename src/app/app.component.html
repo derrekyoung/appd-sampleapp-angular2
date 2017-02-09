@@ -1,4 +1,18 @@
 <h1>
   {{title}}
 </h1>
+
+<header>
+  <div>
+
+    <!-- Navigation with router directives-->
+    <nav>
+      <a [routerLink]="['/']">Home</a>
+      <a [routerLink]="['/page1']">Page 1</a>
+      <a [routerLink]="['/page2']">Page 2</a>
+    </nav>
+  </div>
+</header>
+
+
 <router-outlet></router-outlet>

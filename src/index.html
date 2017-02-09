@@ -7,6 +7,14 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Manually add this section to the base HTML page. It's important that this comes before the <app-root> -->
+  <script>
+    // Manually change this value
+    window["adrum-app-key"] = "FOO-BAR-BAZ";
+    window["adrum-start-time"] = new Date().getTime();
+  </script>
+  <!-- You can choose to pull the file from the AppDynamics CDN or host the file yourself. You must change this file location if you're hosting the file yourself. -->
+  <script src="https://cdn.appdynamics.com/adrum/adrum-latest.js"></script>
 </head>
 <body>
   <app-root>Loading...</app-root>
